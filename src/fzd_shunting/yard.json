@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "route_model": "north-end-occupancy-v1",
+  "notes": [
+    "Lengths from user-provided table; depot inner temporary length 151.7m.",
+    "存5北/南 and 洗罐线北/洗罐站 merged with user authorization.",
+    "Terminal eligibility is trusted from TargetLines; not reclassified by planner.",
+    "机/调 combined temporary clearance extensions are not borrowed by independent segments in this prototype.",
+    "Topology imported from train_cal2 and normalized; no legacy business/reversal rules imported."
+  ],
+  "tracks": [
+    {
+      "name": "联6",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "联7",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "机北1",
+      "length_mm": 81400,
+      "reference_slots": 6,
+      "kind": "temporary"
+    },
+    {
+      "name": "存1线",
+      "length_mm": 113000,
+      "reference_slots": 9,
+      "kind": "storage"
+    },
+    {
+      "name": "存2线",
+      "length_mm": 239200,
+      "reference_slots": 19,
+      "kind": "storage"
+    },
+    {
+      "name": "存3线",
+      "length_mm": 258500,
+      "reference_slots": 21,
+      "kind": "storage"
+    },
+    {
+      "name": "存4线",
+      "length_mm": 317800,
+      "reference_slots": 26,
+      "kind": "storage"
+    },
+    {
+      "name": "存4南",
+      "length_mm": 154500,
+      "reference_slots": 12,
+      "kind": "temporary"
+    },
+    {
+      "name": "存5线",
+      "length_mm": 523600,
+      "reference_slots": 43,
+      "kind": "storage"
+    },
+    {
+      "name": "机北2",
+      "length_mm": 55700,
+      "reference_slots": 4,
+      "kind": "temporary"
+    },
+    {
+      "name": "机库线",
+      "length_mm": 134400,
+      "reference_slots": 11,
+      "kind": "storage",
+      "terminal_length_mm": 71600
+    },
+    {
+      "name": "调梁线北",
+      "length_mm": 70100,
+      "reference_slots": 5,
+      "kind": "storage"
+    },
+    {
+      "name": "调梁棚",
+      "length_mm": 174300,
+      "reference_slots": 14,
+      "kind": "operation"
+    },
+    {
+      "name": "机走北",
+      "length_mm": 69100,
+      "reference_slots": 5,
+      "kind": "storage"
+    },
+    {
+      "name": "机走棚",
+      "length_mm": 106800,
+      "reference_slots": 8,
+      "kind": "operation"
+    },
+    {
+      "name": "机南",
+      "length_mm": 90100,
+      "reference_slots": 7,
+      "kind": "temporary"
+    },
+    {
+      "name": "预修线",
+      "length_mm": 214000,
+      "reference_slots": 17,
+      "kind": "operation",
+      "terminal_length_mm": 198500
+    },
+    {
+      "name": "洗罐油漆北",
+      "length_mm": 62900,
+      "reference_slots": 5,
+      "kind": "temporary"
+    },
+    {
+      "name": "洗罐线",
+      "length_mm": 193100,
+      "reference_slots": 15,
+      "kind": "operation"
+    },
+    {
+      "name": "抛丸线",
+      "length_mm": 42300,
+      "reference_slots": 3,
+      "kind": "operation"
+    },
+    {
+      "name": "油漆线",
+      "length_mm": 109000,
+      "reference_slots": 9,
+      "kind": "operation"
+    },
+    {
+      "name": "卸轮线",
+      "length_mm": 112000,
+      "reference_slots": 9,
+      "kind": "operation",
+      "terminal_length_mm": 47300
+    },
+    {
+      "name": "渡1",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡2",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡3",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡4",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡5",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡6",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡7",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡8",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡9",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡10",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡11",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡12",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "渡13",
+      "length_mm": 0,
+      "reference_slots": 0,
+      "kind": "transit"
+    },
+    {
+      "name": "修1库外",
+      "length_mm": 118400,
+      "reference_slots": 9,
+      "kind": "storage",
+      "terminal_length_mm": 49300
+    },
+    {
+      "name": "修1库内",
+      "length_mm": 151700,
+      "reference_slots": 7,
+      "kind": "operation"
+    },
+    {
+      "name": "修2库外",
+      "length_mm": 143000,
+      "reference_slots": 11,
+      "kind": "storage",
+      "terminal_length_mm": 49300
+    },
+    {
+      "name": "修2库内",
+      "length_mm": 151700,
+      "reference_slots": 7,
+      "kind": "operation"
+    },
+    {
+      "name": "修3库外",
+      "length_mm": 89800,
+      "reference_slots": 7,
+      "kind": "storage",
+      "terminal_length_mm": 49300
+    },
+    {
+      "name": "修3库内",
+      "length_mm": 151700,
+      "reference_slots": 7,
+      "kind": "operation"
+    },
+    {
+      "name": "修4库外",
+      "length_mm": 89200,
+      "reference_slots": 7,
+      "kind": "storage",
+      "terminal_length_mm": 49300
+    },
+    {
+      "name": "修4库内",
+      "length_mm": 151700,
+      "reference_slots": 7,
+      "kind": "operation"
+    }
+  ],
+  "edges": [
+    [
+      "修1库内",
+      "修1库外"
+    ],
+    [
+      "修1库外",
+      "渡11"
+    ],
+    [
+      "修2库内",
+      "修2库外"
+    ],
+    [
+      "修2库外",
+      "渡12"
+    ],
+    [
+      "修3库内",
+      "修3库外"
+    ],
+    [
+      "修3库外",
+      "渡13"
+    ],
+    [
+      "修4库内",
+      "修4库外"
+    ],
+    [
+      "修4库外",
+      "渡13"
+    ],
+    [
+      "卸轮线",
+      "渡11"
+    ],
+    [
+      "存1线",
+      "机北1"
+    ],
+    [
+      "存2线",
+      "渡3"
+    ],
+    [
+      "存3线",
+      "渡3"
+    ],
+    [
+      "存4南",
+      "存3线"
+    ],
+    [
+      "存4南",
+      "存4线"
+    ],
+    [
+      "存4线",
+      "渡1"
+    ],
+    [
+      "存5线",
+      "渡1"
+    ],
+    [
+      "抛丸线",
+      "渡10"
+    ],
+    [
+      "机北1",
+      "渡2"
+    ],
+    [
+      "机北2",
+      "机北1"
+    ],
+    [
+      "机南",
+      "机走棚"
+    ],
+    [
+      "机库线",
+      "渡4"
+    ],
+    [
+      "机走北",
+      "渡5"
+    ],
+    [
+      "机走棚",
+      "机走北"
+    ],
+    [
+      "油漆线",
+      "洗罐油漆北"
+    ],
+    [
+      "洗罐油漆北",
+      "机走棚"
+    ],
+    [
+      "洗罐线",
+      "洗罐油漆北"
+    ],
+    [
+      "渡1",
+      "联6"
+    ],
+    [
+      "渡10",
+      "机南"
+    ],
+    [
+      "渡10",
+      "渡9"
+    ],
+    [
+      "渡11",
+      "联7"
+    ],
+    [
+      "渡12",
+      "联7"
+    ],
+    [
+      "渡13",
+      "渡12"
+    ],
+    [
+      "渡2",
+      "联6"
+    ],
+    [
+      "渡3",
+      "渡2"
+    ],
+    [
+      "渡4",
+      "机北2"
+    ],
+    [
+      "渡5",
+      "机北2"
+    ],
+    [
+      "渡6",
+      "渡5"
+    ],
+    [
+      "渡7",
+      "存1线"
+    ],
+    [
+      "渡7",
+      "渡6"
+    ],
+    [
+      "渡8",
+      "存4南"
+    ],
+    [
+      "渡8",
+      "存5线"
+    ],
+    [
+      "渡9",
+      "渡8"
+    ],
+    [
+      "渡9",
+      "预修线"
+    ],
+    [
+      "联7",
+      "渡10"
+    ],
+    [
+      "调梁棚",
+      "调梁线北"
+    ],
+    [
+      "调梁线北",
+      "渡4"
+    ],
+    [
+      "预修线",
+      "存2线"
+    ],
+    [
+      "预修线",
+      "渡7"
+    ]
+  ]
+}

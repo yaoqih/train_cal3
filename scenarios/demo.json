@@ -1,0 +1,46 @@
+{
+  "StartStatus": [
+    {
+      "No": "demo-A",
+      "Line": "存1线",
+      "Position": 1,
+      "Length": 13.2,
+      "RepairProcess": "段修",
+      "Type": "C64K",
+      "IsHeavy": false,
+      "IsWeigh": false,
+      "IsClosedDoor": false,
+      "TargetLines": {
+        "存2线": {
+          "ForceTargetPosition": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "No": "demo-B",
+      "Line": "存1线",
+      "Position": 2,
+      "Length": 13.2,
+      "RepairProcess": "段修",
+      "Type": "C64K",
+      "IsHeavy": true,
+      "IsWeigh": false,
+      "IsClosedDoor": false,
+      "TargetLines": {
+        "存3线": {
+          "ForceTargetPosition": [
+            5
+          ]
+        }
+      }
+    }
+  ],
+  "TerminalLines": [],
+  "locoNode": {
+    "Line": "机库线",
+    "End": "North"
+  }
+}

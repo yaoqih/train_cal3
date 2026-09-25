@@ -1,0 +1,218 @@
+{
+  "request": {
+    "StartStatus": [
+      {
+        "No": "5243217",
+        "Line": "存1线",
+        "Position": 1,
+        "TargetLines": {
+          "抛丸线": {}
+        },
+        "Length": 13.2,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "5240771",
+        "Line": "存1线",
+        "Position": 2,
+        "TargetLines": {
+          "油漆线": {}
+        },
+        "Length": 13.2,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "5340904",
+        "Line": "存2线",
+        "Position": 1,
+        "TargetLines": {
+          "存3线": {}
+        },
+        "Length": 13.2,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "1503238",
+        "Line": "存2线",
+        "Position": 2,
+        "TargetLines": {
+          "预修线": {}
+        },
+        "Length": 14.3,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "3405155",
+        "Line": "油漆线",
+        "Position": 1,
+        "TargetLines": {
+          "油漆线": {}
+        },
+        "Length": 16.5,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "1503303",
+        "Line": "修1库内",
+        "Position": 1,
+        "TargetLines": {
+          "修1库内": {
+            "ForceTargetPosition": [
+              1
+            ]
+          }
+        },
+        "Length": 14.3,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "3405223",
+        "Line": "修2库内",
+        "Position": 1,
+        "TargetLines": {
+          "修2库内": {}
+        },
+        "Length": 16.5,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "3405539",
+        "Line": "洗罐线",
+        "Position": 1,
+        "TargetLines": {
+          "洗罐线": {}
+        },
+        "Length": 16.5,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "1581904",
+        "Line": "洗罐线",
+        "Position": 2,
+        "TargetLines": {
+          "洗罐线": {}
+        },
+        "Length": 14.3,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "1576894",
+        "Line": "存5线",
+        "Position": 1,
+        "TargetLines": {
+          "存5线": {}
+        },
+        "Length": 14.3,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "1578190",
+        "Line": "存5线",
+        "Position": 2,
+        "TargetLines": {
+          "存5线": {}
+        },
+        "Length": 14.3,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      },
+      {
+        "No": "3461580",
+        "Line": "调梁棚",
+        "Position": 1,
+        "TargetLines": {
+          "调梁棚": {}
+        },
+        "Length": 16.5,
+        "Type": "C64K",
+        "RepairProcess": "段修",
+        "IsHeavy": false,
+        "IsWeigh": false,
+        "IsClosedDoor": false
+      }
+    ],
+    "locoNode": {
+      "Line": "机库线",
+      "End": "North"
+    }
+  },
+  "plan": {
+    "schema_version": 2,
+    "actions": [
+      {
+        "line": "存1线",
+        "operation": "get",
+        "count": 2
+      },
+      {
+        "line": "油漆线",
+        "operation": "put",
+        "count": 1
+      },
+      {
+        "line": "抛丸线",
+        "operation": "put",
+        "count": 1
+      },
+      {
+        "line": "存2线",
+        "operation": "get",
+        "count": 2
+      },
+      {
+        "line": "预修线",
+        "operation": "put",
+        "count": 1
+      },
+      {
+        "line": "存3线",
+        "operation": "put",
+        "count": 1
+      }
+    ],
+    "status": "complete"
+  }
+}

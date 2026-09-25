@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fzd-shunting"
+version = "0.1.0"
+description = "Fuzhou East shunting simulator, constrained dispatcher and graph policies"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+learning = ["torch>=2.3", "numpy>=1.23"]
+test = ["pytest>=7"]
+ui = ["streamlit>=1.41,<2"]
+
+[project.scripts]
+fzd = "fzd_shunting.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+fzd_shunting = ["yard.json"]
+"fzd_shunting.viewer" = ["assets/*.json", "assets/*.html", "assets/*.css", "assets/*.js"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

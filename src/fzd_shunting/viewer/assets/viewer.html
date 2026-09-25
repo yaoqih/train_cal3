@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>福州东 · 调车查看器</title>
+    <style>
+      /*__STYLE__*/
+    </style>
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div>
+          <div class="eyebrow">FUZHOU EAST · 福州东</div>
+          <h1>调车查看器 <span id="status" class="badge"></span></h1>
+          <p id="source" class="muted"></p>
+        </div>
+        <div class="search-wrap">
+          <input
+            id="search"
+            type="search"
+            placeholder="查找车号或股道…"
+            aria-label="查找车号或股道"
+            autocomplete="off"
+          />
+          <div id="search-results" class="search-results" hidden></div>
+        </div>
+      </header>
+      <div id="notices"></div>
+      <section id="playback" class="playback panel" aria-label="回放控制">
+        <div class="transport">
+          <button id="first" title="初始状态 · Home" aria-label="初始状态">
+            初</button
+          ><button id="prev" title="上一步 · ←" aria-label="上一步">‹</button
+          ><button id="play" class="primary" aria-label="播放">播放</button
+          ><button id="next" title="下一步 · →" aria-label="下一步">›</button
+          ><button id="last" title="末态 · End" aria-label="末态">末</button>
+        </div>
+        <div class="timeline">
+          <div class="step-line">
+            <strong id="action-title"></strong
+            ><span id="step-count" class="muted"></span>
+          </div>
+          <input
+            id="scrubber"
+            type="range"
+            min="0"
+            value="0"
+            aria-label="回放步骤"
+          />
+        </div>
+        <select id="speed" aria-label="播放速度">
+          <option value="1800">慢速</option>
+          <option value="1000" selected>正常</option>
+          <option value="450">快速</option>
+        </select>
+      </section>
+      <div id="step-notice"></div>
+      <section class="workspace">
+        <div class="yard panel">
+          <div class="panel-bar">
+            <div class="segments" role="group" aria-label="显示方式">
+              <button id="map-tab" class="active" aria-pressed="true">
+                站场图</button
+              ><button id="table-tab" aria-pressed="false">车序表</button>
+            </div>
+            <label class="follow"
+              ><input id="follow" type="checkbox" checked />跟随作业</label
+            >
+          </div>
+          <div id="map-view">
+            <div class="map-tools">
+              <button id="zoom-in" title="放大" aria-label="放大">＋</button
+              ><button id="zoom-out" title="缩小" aria-label="缩小">−</button
+              ><button id="reset" title="还原视图">全图</button>
+            </div>
+            <svg
+              id="yard-svg"
+              role="img"
+              aria-label="福州东站场图，点击股道查看详情"
+              viewBox="40 45 2160 1040"
+            ></svg>
+            <div class="map-footer">
+              <span>北端 ← 车序 → 南端</span
+              ><span
+                ><i class="dot active-dot"></i>本步取放
+                <i class="dot route-dot"></i>记录进路</span
+              ><span>拖动平移 · 按住 Ctrl 滚轮缩放</span>
+            </div>
+          </div>
+          <div id="table-view" hidden>
+            <div class="table-toolbar">
+              <label
+                ><input
+                  id="occupied-only"
+                  type="checkbox"
+                  checked
+                />仅看有车股道</label
+              ><span class="muted">北端 → 南端</span>
+            </div>
+            <div id="track-table"></div>
+          </div>
+          <div id="unmapped" class="unmapped"></div>
+        </div>
+        <aside class="inspector panel">
+          <div class="panel-bar">
+            <div class="segments">
+              <button id="detail-tab" class="active">详情</button
+              ><button id="plan-tab">勾计划</button>
+            </div>
+            <span id="selection-kind" class="muted"></span>
+          </div>
+          <div id="details" class="inspector-body"></div>
+          <div id="plan-list" class="inspector-body" hidden></div>
+        </aside>
+      </section>
+      <section class="train panel">
+        <div class="panel-bar">
+          <div>
+            <strong>机车车列</strong
+            ><span id="loco-location" class="muted"></span>
+          </div>
+          <span id="train-stats"></span>
+        </div>
+        <div id="train-body"></div>
+        <div class="train-footer">
+          <span>机车端 → 车列尾部</span
+          ><span
+            ><i class="dot add-dot"></i>本步挂入
+            <i class="dot remove-dot"></i>本步摘下</span
+          >
+        </div>
+      </section>
+      <footer class="footer">
+        <span id="replay-note"></span><span>← → 单步 · 空格播放</span>
+      </footer>
+    </main>
+    <script id="viewer-data" type="application/json">
+      /*__DATA__*/
+    </script>
+    <script>
+      /*__SCRIPT__*/
+    </script>
+  </body>
+</html>
